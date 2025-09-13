@@ -78,3 +78,14 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ```
+
+---
+## Running the Microservices
+- cd course-services
+- mvn spring-boot:run
+
+- cd ../media-services
+- mvn spring-boot:run
+
+- cd ../student-services
+- mvn spring-boot:run
