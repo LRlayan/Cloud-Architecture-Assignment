@@ -56,3 +56,25 @@ This repository contains four projects:
 - Frontend: run `npm install` then `npm run dev` inside `frontend-app`.
 
 ---
+
+## Database Setup (MySQL on GCP)
+
+1.Create a MySQL instance on GCP.
+
+2.Note the following details:
+- Host (Public IP or Connection Name)
+- Port (default: 3306)
+- Database Name
+- Username & Password
+
+3.Update each microservice with these credentials inside
+- src/main/resources/application.properties
+
+```properties
+spring.datasource.url=jdbc:mysql://<GCP_HOST>:3306/<DB_NAME>
+spring.datasource.username=<USERNAME>
+spring.datasource.password=<PASSWORD>
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+```
