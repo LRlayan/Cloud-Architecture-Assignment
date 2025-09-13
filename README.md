@@ -68,8 +68,17 @@ This repository contains four projects:
 - Username & Password
 
 3.Update each microservice with these credentials inside
-- src/main/resources/application.properties
 
+- course-service/src/main/resources/application.properties
+```properties
+spring.application.name=course-service
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+server.port=8081
+spring.profiles.active=gcp
+```
+
+- course-service/src/main/resources/application-gcp.properties
 ```properties
 spring.datasource.url=jdbc:mysql://<GCP_HOST>:3306/<DB_NAME>
 spring.datasource.username=<USERNAME>
