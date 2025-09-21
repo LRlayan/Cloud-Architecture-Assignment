@@ -1,5 +1,10 @@
 # Cloud Enabled Deployment In Action with GCP
 
+## Student Details
+- Name: Ramesh Layan
+- StudentId: 2301671065
+- email: rameshlayan4@gmail.com
+
 This repository contains my **Practical Assignment** for connecting a **MySQL database hosted on Google Cloud Platform (GCP)** with a microservices-based application and a React frontend.
 
 ---
